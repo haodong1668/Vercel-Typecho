@@ -47,6 +47,4 @@ $db->addServer(array (
 Typecho_Db::set($db);
 
 /** 开启HTTPS */
-if (!defined('__TYPECHO_SECURE__')) {
-  define('__TYPECHO_SECURE__', true);
-}
+define('__TYPECHO_SECURE__', true);
