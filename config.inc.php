@@ -47,4 +47,6 @@ $db->addServer(array (
 Typecho_Db::set($db);
 
 /** 开启HTTPS */
-define('__TYPECHO_SECURE__', true);
+if (!defined('__TYPECHO_ADMIN__')) {
+  define('__TYPECHO_ADMIN__', true);
+  }
